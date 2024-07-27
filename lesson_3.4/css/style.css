@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+h2, h3, h4, h5 {
+  font-family: "Fraunces", serif;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  margin-left: 33px;
+}
+
+a {
+  text-decoration: none;
+  color: #83888F;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_link:hover {
+  color: #000;
+}
+
+.menu {
+  display: none;
+}
+
+.main__banner {
+  height: 600px;
+  margin-top: 43px;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner_body {
+  width: 453px;
+  position: absolute;
+  left: 85px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.banner_body h2 {
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 72px;
+  margin-bottom: 32px;
+  color: #FEFCF7;
+}
+.banner_body p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 50px;
+  color: #FEFCF7;
+}
+
+.main_cards {
+  margin-top: 270px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.card_body {
+  text-align: center;
+}
+
+.main-title {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+}
+
+.main-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.why {
+  height: 577px;
+  background-color: #2C343E;
+  padding: 100px 85px;
+  margin-top: 144px;
+}
+.why .why_title {
+  margin: 0 auto;
+  text-align: center;
+}
+.why h3 {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 40px;
+  color: #FEFCF7;
+  margin-bottom: 32px;
+}
+.why p {
+  color: #FEFCF7;
+}
+
+.why_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 100px auto;
+}
+
+.why_card {
+  background-color: #0E8784;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.why_card_body .main-title,
+.why_card_body .main-text {
+  color: #FEFCF7;
+  margin-top: 30px;
+}
+
+.how {
+  margin-top: 200px;
+}
+.how > h3 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  color: #83888F;
+}
+
+.liniya {
+  position: relative;
+  height: 2px;
+  width: 70%;
+  background-color: #FDD6BA;
+  margin-top: 95px;
+}
+
+.oval {
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  border: 2px solid #0E8784;
+  background-color: white;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.oval_2 {
+  left: 50%;
+}
+
+.oval_3 {
+  left: 100%;
+}
+
+.how_cards {
+  margin-top: 85px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 90px;
+}
+
+.how_card > h2 {
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 72px;
+  margin-bottom: 40px;
+  color: #FDD6BA;
+}
+.how_card > h3 {
+  margin-bottom: 42px;
+  font-size: 32px;
+}
+
+.btn {
+  margin-top: 60px;
+}
+
+footer {
+  background-color: #2C343E;
+}
+
+.footer {
+  padding: 47px 0;
+  margin-top: 200px;
+}
+
+.footer-list {
+  margin: 0;
+  display: flex;
+}
+
+.footer-item {
+  margin-right: 15px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #83888F;
+}
+
+.footer-link:hover {
+  color: rgb(255, 255, 255);
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.bx {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.bx:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .main_cards,
+  .why_cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .main_card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .why_card {
+    display: grid;
+    grid-template-columns: repeat(2, 100px auto);
+    align-items: center;
+    text-align: left;
+  }
+  .how {
+    margin-top: 700px;
+  }
+  .how_cards {
+    gap: 30px;
+  }
+  .footer {
+    width: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    display: inline-block;
+  }
+  .nav {
+    display: none;
+  }
+  .banner_body {
+    left: 0;
+    padding: 10px;
+    width: auto;
+  }
+  .banner_body h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .banner_body p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .main_card,
+  .why_card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 50px;
+  }
+  .why_cards {
+    grid-template-columns: auto;
+  }
+  .why_card {
+    text-align: center;
+  }
+  .why_card .img-fluid {
+    margin: 0 auto;
+  }
+  .liniya {
+    display: none;
+  }
+  .how {
+    margin-top: 1000px;
+    text-align: center;
+  }
+  .how_cards {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+}
+@media screen and (max-width: 460px) {
+  .how {
+    margin-top: 1500px;
+  }
+}
+@media screen and (max-width: 372px) {
+  .how {
+    margin-top: 1600px;
+  }
+}/*# sourceMappingURL=style.css.map */
